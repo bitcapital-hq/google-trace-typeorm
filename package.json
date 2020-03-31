@@ -1,0 +1,30 @@
+{
+  "name": "google-trace-typeorm",
+  "version": "0.0.",
+  "description": "Plugin to trace internal TypeORM methods in Google Cloud Trace",
+  "main": "dist/plugin.js",
+  "repository": "https://github.com/bitcapital-hq/google-trace-typeorm.git",
+  "author": "Pedro Nascimento <pedro.nascimento@bitcapital.com.br>",
+  "license": "MIT",
+  "private": true,
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf coverage dist docs",
+    "lint": "eslint {lib,tests}/**.ts",
+    "precommit": "lint-staged",
+    "prepare": "yarn clean && yarn build"
+  },
+  "dependencies": {
+    "shimmer": "^1.2.1"
+  },
+  "devDependencies": {
+    "@google-cloud/trace-agent": "^4.2.5",
+    "typeorm": "^0.2.24"
+  }
+}
