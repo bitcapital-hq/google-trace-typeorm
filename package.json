@@ -25,6 +25,6 @@
   },
   "devDependencies": {
     "@google-cloud/trace-agent": "^4.2.5",
-    "typeorm": "^0.2.24"
+    "typeorm": "^0.2.25"
   }
 }
